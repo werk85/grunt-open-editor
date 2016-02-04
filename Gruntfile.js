@@ -20,6 +20,13 @@ module.exports = function(grunt) {
     // Configuration to be run (and then tested).
     'open_editor': {
       'default_options': {
+      },
+      'keep_options': {
+        options: {
+          configVariable: 'editor_keep',
+          keepPrevious: true,
+          keepPreviousFilename: 'test/expected.txt'
+        }
       }
     },
 

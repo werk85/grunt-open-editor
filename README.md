@@ -1,6 +1,6 @@
 # grunt-open-editor
 
-> Open editor and used generated content in your grunt configuration.
+> Open editor and use generated content in your grunt configuration.
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
@@ -49,9 +49,27 @@ Default value: `'.txt'`
 
 Temporary file suffix.
 
+#### options.configVariable
+Type: `String`
+Default value: 'editor'
+
+The variable inside the grunt configuration that should be used.
+
+#### options.keepPrevious
+Type: `Boolean`
+Default value: `false`
+
+If the previous editor content should be keeped when running the task again.
+
+#### options.keepPreviousFileName
+Type: `String`
+Default value: `'.tmp/grunt-open-editor.txt'`
+
+If `keepPrevious` is set to `true` this is the filepath that is used for storing the content. The default value is concatinated by using the `prefix` and `suffix` values in the configuration.
+
 ### Usage
 
-Run the task and use the `<%= editor %>` grunt template variable some where in your configuration.
+Run the task and use the `<%= editor %>` (or the value defined in `options.configVariable`) grunt template variable some where in your configuration.
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).

@@ -34,5 +34,13 @@ exports.open_editor = {
     test.equal(content, 'Test');
 
     test.done();
+  },
+  keep_options: function (test) {
+    test.expect(1);
+
+    var content = grunt.config.get('editor_keep');
+    test.equal(content, 'Test');
+
+    test.done();
   }
 };
