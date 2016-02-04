@@ -10,9 +10,10 @@
 
 module.exports = function(grunt) {
   var fs = require('fs');
+  var path = require('path');
 
-  var temp = require('temp');
   var editor = require('editor');
+  var temp = require('temp');
 
   temp.track();
 
