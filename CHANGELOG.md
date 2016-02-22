@@ -1,3 +1,7 @@
+# Version 1.1.2
+
+ * Update peerDependencies to support Grunt 1.0 #1
+
 # Version 1.1.0
 
  * New configuration parameters `configVariable`, `keepPrevious` and `keepPreviousFilename` added.
